@@ -1,46 +1,340 @@
-/* menu */
-.home{
+/*barra de navegacion*/
+
+.nav{
+    
+    width: 100%;
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.nav.active{
+    background:#fff;
+    padding: 15px;
+}
+
+.nav.active a{
+    color: #000;
+}
+
+.nav.active a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px;
+    background:#fff;
+    color: #000;
+    border-radius: 15px;
+
+}
+
+
+
+/*cuerpo*/
+.main{
+    padding-top: 50px;
+}
+
+/* index */
+.principal{
+    display: flex;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    
 }
-.home .max-width{
+.principal .max-width{
     margin: auto 0 auto 30px;
 }
-.home .home-content .texto1{
+.principal .principal-content .texto1{
     font-size: 27px;
 }
-.home .home-content .texto2{
+.principal .principal-content .texto2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .texto3{
+.principal .principal-content .texto3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .texto3 span{
-    color: crimson;
-    font-weight: 500;
-}
-.home .home-content a{
+
+.principal .principal-content a{
     display: inline-block;
-    background: crimson;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
-    color: crimson;
+
+.fondo{
+    background-image: url("../../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* pasatiempos*/
+.biografia .titulo{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.biografia .parrafo{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: auto;
+}
+
+.slide{
+   
+    margin-top: 30px;
+}
+/*footer*/
+
+
+.pie .num{
+    color: #fff;
+    float: right;
+    margin-right: 100px;
+    margin-top: 35px;
+
+}
+.pie2 .pag{
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+.pie2 .insta{
+    color: #fff;
+}
+
+/*datos personales*/
+.datos .title{ 
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.datos .personal{
+    color: #fff;
+}
+
+.datos .img {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.datos .datos-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: fill;
+    float: left;
+    margin-right: 30px;
+    border-radius: 6px;
+    
+}
+.datos .datos-content .right p{
+    text-align: justify; 
+    margin-top: 10px;
+}
+.datos .datos-content .right a{
+    display: inline-block;
+    background: rgb(17, 17, 17);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    
+}
+.datos .datos-content .right a:hover{
+    color: rgb(10, 10, 10);
     background: none;
 }
+/*footer de datos personales*/
+.footer .pie{
+    
+    float: left;
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align:end;
+    
+}
+.footer .pie2{
+    color: #fff;
+    float: left;
+    margin-right: 100px;
+    margin-top: 20px;
+    
+}
+.footer .pie3{
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+footer .pie3 .insta{
+    color: #fff;
+}
+
+
+/*conocimientos*/
+.academico .title{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #fff;
+    
+}
+.academico .text{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+.academico .academico-content .column .bars{
+    margin-bottom: 17px;
+}
+.academico .academico-content .column .info{
+    color: #fff;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.academico .academico-content .column span{
+    font-weight: 500;
+    font-size: 20px;
+}
+.academico .academico-content .column .line{
+    height: 6px;
+    width: 100%;
+    background: rgb(12, 12, 12);
+    position: relative;
+}
+.academico .academico-content .column .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    
+    background: rgb(12, 241, 115);
+}
+.academico-content .column .html::before{
+    width: 70%;
+}
+.academico-content .column .css::before{
+    width: 60%;
+}
+.academico-content .column .js::before{
+    width: 50%;
+}
+.academico-content .column .vue::before{
+    width: 50%;
+}
+.academico-content .column .mysql::before{
+    width: 60%;
+}
+.academico-content .column .c::before{
+    width: 80%;
+}
+.academico-content .column .Cchar::before{
+    width: 80%;
+}
+.academico-content .column .java::before{
+    width: 40%;
+}
+.academico-content .column .php::before{
+    width: 55%;
+}
+.academico-content .column .python::before{
+    width: 30%;
+}
+
+/*imagen de las barras*/
+
+.html2
+{
+    width: 50px;
+     height: 40px;
+}
+
+
+.css2{
+    width: 50px;
+    height: 40px;
+}
+.js2{
+    width: 50px;
+    height: 40px;
+}
+.vue2{
+    width: 50px;
+    height: 40px;
+    
+    
+}
+
+.mysql2{
+    width: 50px;
+    height: 40px;
+}
+
+
+.c2{
+    width: 50px;
+    height: 40px;
+}
+.Cchar2{
+    width: 50px;
+    height: 40px;
+}
+.java2{
+    width: 50px;
+    height: 40px;;
+}
+.php2{
+    width: 50px;
+    height: 40px;
+}
+
+.python2{
+    width: 50px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+

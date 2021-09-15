@@ -8,49 +8,63 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/style.css">
     
 </head>
 <body class="bg-dark">
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-                <div class="container-fluid" >
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto" >
-                        <a class="nav-link" style="color: aliceblue;" href="index.html">INICIO</a>
-                      <a class="nav-link active" aria-current="page" style="color: aliceblue;" href="datospersonales.html">DATOS PERSONALES</a>
-                      <a class="nav-link" style="color: aliceblue;" href="conocimientos.html">CONOCIMIENTOS ACADEMICOS</a>
-                      <a class="nav-link" href="pasatiempos.html" style="color: aliceblue;" >PASATIEMPOS</a>
-                        
+    <header >
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="datospersonales.html">DATOS PERSONALES</a></li>
+                <li><a href="conocimientos.html">CONOCIMIENTOS</a></li>
+                <li><a href="pasatiempos.html">PASATIEMPOS</a></li>
+            </ul> 
+        </nav>
+ 
+         
+     </header>
+    <main class="main">
+        <section class="datos" id="datos">
+            <div class="container">
+                <h2 class="title">Mi Biografía</h2>
+                <div class="datos-content">
+                    <div class="column left">
+                        <img src="img/fotoHojadeVida.jpg" alt="">
                     </div>
-                  </div>
+                    <div class="column right ">
+                        <h2 class="personal">Mi nombre es Daniel Ocampo Aristizabal</h2>
+                        <p class="personal">En estos momentos estoy realizando una tecnica de Desarrolo De Software en el CESDE 
+                            y al mismo tiempo estoy cursando sexto semestre de ingenieria de sistemas en la universidad 
+                            del Salazar Y Herrera(IUSH),tambien estoy estudiando en una academia de ingles en la cual voy en le nivel B2.
+                             Desde que estaba en el colegio me interesaron los temas que
+                            tenian que ver con la tecnologia y las computadoras, ya que mi papa es ingeniero de sistemas y 
+                            me aconsejaba que era una muy buena carrera.
+                            Desde el año 2019 inicie mis estudios en la IUSH y he podido adquirir conocimientos basicos en lenguajes como 
+                            C++,C#,Python, y en el año 2020 que inicie en el CESDE, he adquirido conocimientos en HTML, CSS, JS, PHP, JAVA </p>
+                        <a href="documentos/Hoja de vida.pdf">Hoja de vida</a>
+                    </div>
                 </div>
-              </nav>
-        </div>
-
-        
-    </header>
-    <main>
-      
+            </div>
+        </section>
 
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div  style="float: left;" >
-                <h5 style="color: aliceblue; margin-right: 100px;" >Numero de contacto: 3056478219   </h5>
-                
+            <div  class="pie">
+                <h5 class="num" >Numero de contacto: 3056478219</h5>
             </div>
-            <div style="float: left;" >
-                <h5 style="color: aliceblue;  margin-right: 120px;" >Ubicacion: cll 32f #85-20</h5>
+            <div class="pie2">
+                <h5 class="num" >Ubicacion: cll 32f #85-20</h5>
             </div>
-            <div style="float: left;">
-                <h5 style="color: aliceblue;" >Pagina en instagram: @elPaisa_lociones </h5>
+            <div class="pie3">
+                <h5 class="pag" >Pagina en instagram:<a class="insta" href="https://www.instagram.com/daniel_ocampo_a/?hl=es"> instagram </a> </h5>
             </div>
         </div>
     </footer>
-
+    <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

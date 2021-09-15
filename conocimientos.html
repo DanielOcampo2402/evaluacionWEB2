@@ -8,48 +8,134 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/style.css">
     
 </head>
 <body class="bg-dark">
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-                <div class="container-fluid" >
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto" >
-                        <a class="nav-link" style="color: aliceblue;" href="index.html">INICIO</a>
-                      <a class="nav-link active" aria-current="page" style="color: aliceblue;" href="datospersonales.html">DATOS PERSONALES</a>
-                      <a class="nav-link" style="color: aliceblue;" href="conocimientos.html">CONOCIMIENTOS ACADEMICOS</a>
-                      <a class="nav-link" href="pasatiempos.html" style="color: aliceblue;" >PASATIEMPOS</a>
-                        
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
+    <header >
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="datospersonales.html">DATOS PERSONALES</a></li>
+                <li><a href="conocimientos.html">CONOCIMIENTOS</a></li>
+                <li><a href="pasatiempos.html">PASATIEMPOS</a></li>
+            </ul> 
+        </nav>
+     </header>
 
-        
-    </header>
-    <main>
-      
+    <main class="main">
+        <section class="academico" id="academico">
+            <div class="container">
+                <h2 class="title">MI CONOCIMIENTO ACADEMICO</h2>
+                <div class="academico-content">
+                    
+                    <div class="text"></div>
+                        <p class="text">En los pocos años de estudio que llevo en la universidad y la tecnica en el CESDE, He tenido la oportunidad 
+                            de interactuar con estos lenguajes y frameworks: </p> 
+                    <div class="column">
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/html.jpg" alt="" class="html2">
+                                <span>HTML</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/css.png" alt="" class="css2">
+                                <span>CSS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/js.png" alt="" class="js2">
+                                <span>JavaScript</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/vue.png" alt="" class="vue2">
+                                <span>Vue.js</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="line vue"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/mysql.jpg" alt="" class="mysql2">
+                                <span>MySQL</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line mysql"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/c++.png" alt="" class="c2">
+                                <span>C++</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line c"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/char.png" alt="" class="Cchar2">
+                                <span>C#</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line Cchar"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/java.jpg" alt="" class="java2">
+                                <span>JAVA</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="line java"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/php.jpg" alt="" class="php2">
+                                <span>PHP</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <img src="img/python.png" alt="" class="python2">
+                                <span>PYTHON</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="line python"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
     <footer>
         <div class="container">
-            <div  style="float: left;" >
-                <h5 style="color: aliceblue; margin-right: 100px;" >Numero de contacto: 3056478219   </h5>
+            <div  class="pie">
+                <h5 class="num" >Numero de contacto: 3056478219   </h5>
                 
             </div>
-            <div style="float: left;" >
-                <h5 style="color: aliceblue;  margin-right: 120px;" >Ubicacion: cll 32f #85-20</h5>
+            <div class="pie">
+                <h5 class="num" >Ubicacion: cll 32f #85-20</h5>
             </div>
-            <div style="float: left;">
-                <h5 style="color: aliceblue;" >Pagina en instagram: @elPaisa_lociones </h5>
+            <div class="pie2">
+                <h5 class="pag" >Pagina en instagram:<a class="insta" href="https://www.instagram.com/daniel_ocampo_a/?hl=es"> instagram </a> </h5>
             </div>
         </div>
     </footer>
-
+    <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
