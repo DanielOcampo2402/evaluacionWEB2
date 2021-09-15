@@ -86,9 +86,9 @@ function pintarDatos(datos){
       imagen.classList.add("card-img-top")
       imagen.src= cancion.album.images[0].url
 
-      let nombre = document.createElement("p")
+      let nombre = document.createElement("h6")
       nombre.classList.add("card-text")
-      nombre.src= cancion.name
+      nombre.textContent= cancion.name
 
      //crear un audio en la tarjeta tarjeta
       let audio = document.createElement("audio")
@@ -96,14 +96,18 @@ function pintarDatos(datos){
       audio.src= cancion.preview_url;
       audio.setAttribute("controls", "controls")
 
-      let popularidad = document.createElement("h1")
-      popularidad.classList.add("card-text")
-      popularidad.src = cancion.popularity;
+      let popularidad = document.createElement("div")
+      popularidad.classList.add("progress-bar")
+      let datos = "width:"+ cancion.popularity+"%"
+      popularidad.setAttribute("style", datos)
+      popularidad.textContent = cancion.popularity;
 
 
       //padres e hijos
-      tarjeta.appendChild(popularidad)
+     
       tarjeta.appendChild(imagen)
+      tarjeta.appendChild(nombre)
+      tarjeta.appendChild(popularidad)
       tarjeta.appendChild(audio)
       columna.appendChild(tarjeta)
       fila.appendChild(columna)
